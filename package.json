@@ -1,0 +1,11 @@
+{
+  "name": "miss-deborah-website",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix ./debby-portfolio -- --hostname 127.0.0.1 --port 3000",
+    "build": "npm run build --prefix ./debby-portfolio",
+    "start": "npm run start --prefix ./debby-portfolio -- -H 127.0.0.1 -p 3000",
+    "lint": "npm run lint --prefix ./debby-portfolio",
+    "open": "start http://127.0.0.1:3000"
+  }
+}
