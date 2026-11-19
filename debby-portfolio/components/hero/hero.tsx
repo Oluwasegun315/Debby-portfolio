@@ -73,12 +73,16 @@ export function Hero() {
           <p className="mt-6 font-serif text-xl tracking-[0.08em] text-gold sm:mt-8 sm:text-3xl">
             Debby Tella
           </p>
+          <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/70 sm:text-sm">
+            IDOWU DEBORAH AYOKA
+          </p>
           <h1 className="mt-2 font-serif text-[2.35rem] leading-[1.02] sm:text-6xl lg:text-7xl">
             Design that stops the scroll and sells the story.
           </h1>
           <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
-            Hire Debby Tella — a graphic designer with {site.experience.toLowerCase()} creating
-            social media designs, Canva templates, PowerPoint presentations and ebook covers
+            Hire IDOWU DEBORAH AYOKA (Debby Tella) — a graphic designer with{" "}
+            {site.experience.toLowerCase()} creating social media, Canva templates,
+            presentations, ebook covers, magazine, mural and stained glass designs
             for brands that want to look ready to sell.
           </p>
 

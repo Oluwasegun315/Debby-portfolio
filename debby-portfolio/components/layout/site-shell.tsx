@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { QuickJumpNav } from "@/components/layout/quick-jump-nav";
+import { ScrollProgress } from "@/components/layout/scroll-progress";
 import { StickyHireBar } from "@/components/home/sticky-hire-bar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
@@ -11,6 +12,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   return (
     <ThemeProvider>
       <TooltipProvider>
+        <ScrollProgress />
         <Navbar />
         <QuickJumpNav />
         <main id="main-content" className="flex-1 pb-24">

@@ -9,8 +9,16 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${siteUrl}/#person`,
-    name: site.name,
-    alternateName: ["Debby", "IDOWU DEBORAH AYOKA", "Debby Tella Graphic Designer"],
+    name: site.legalName,
+    givenName: "Deborah Ayoka",
+    familyName: "Idowu",
+    alternateName: [
+      "IDOWU DEBORAH AYOKA",
+      "Idowu Deborah Ayoka",
+      "Debby Tella",
+      "Debby",
+      "Debby Tella Graphic Designer",
+    ],
     jobTitle: "Graphic Designer",
     description: seo.description,
     url: siteUrl,
@@ -30,6 +38,9 @@ export function JsonLd() {
       "PowerPoint design",
       "Presentation design",
       "Ebook cover design",
+      "Magazine design",
+      "Mural design",
+      "Stained glass design",
       "Brand visuals",
     ],
   };
@@ -38,7 +49,8 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${siteUrl}/#business`,
-    name: `${site.name} — Graphic Design`,
+    name: `${site.legalName} — Debby Tella Graphic Design`,
+    alternateName: "Debby Tella Portfolio",
     description: seo.description,
     url: siteUrl,
     image: `${siteUrl}/portrait/debby.jpg`,
@@ -51,6 +63,7 @@ export function JsonLd() {
     ],
     availableLanguage: ["English"],
     founder: { "@id": `${siteUrl}/#person` },
+    employee: { "@id": `${siteUrl}/#person` },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -63,7 +76,7 @@ export function JsonLd() {
     currenciesAccepted: "NGN, USD, USDT, BTC, ETH",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Graphic design packages",
+      name: "Graphic design packages by IDOWU DEBORAH AYOKA",
       itemListElement: site.packages.map((pack) => ({
         "@type": "Offer",
         name: pack.name,
@@ -80,7 +93,8 @@ export function JsonLd() {
     "@type": "WebSite",
     "@id": `${siteUrl}/#website`,
     url: siteUrl,
-    name: `${site.name} Portfolio`,
+    name: "IDOWU DEBORAH AYOKA — Debby Tella Portfolio",
+    alternateName: ["Debby Tella", "Debby Tella Graphic Designer"],
     description: seo.description,
     publisher: { "@id": `${siteUrl}/#person` },
     inLanguage: "en",
@@ -94,20 +108,30 @@ export function JsonLd() {
   const faqPage = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Who is IDOWU DEBORAH AYOKA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "IDOWU DEBORAH AYOKA is a Nigeria-based graphic designer also known as Debby Tella. She creates social media designs, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design.",
+        },
       },
-    })),
+      ...faqs.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    ],
   };
 
   const services = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Debby Tella design workspaces",
+    name: "Design workspaces by IDOWU DEBORAH AYOKA (Debby Tella)",
     itemListElement: workCategories.map((category, index) => ({
       "@type": "ListItem",
       position: index + 1,

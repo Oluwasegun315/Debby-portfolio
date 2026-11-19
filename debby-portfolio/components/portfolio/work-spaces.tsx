@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
 import { Badge } from "@/components/ui/badge";
-import { formatUsd, workCategories } from "@/data/work-categories";
+import { workCategories } from "@/data/work-categories";
 
 export function WorkSpaces() {
   return (
@@ -16,8 +16,8 @@ export function WorkSpaces() {
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl">Work spaces</h2>
           <div className="mt-4 h-1 w-20 bg-gold" />
           <p className="mt-5 max-w-2xl text-muted-foreground">
-            Each workspace holds a full collection. Open any category to preview
-            every design inside — then hire Debby when something clicks.
+            Each workspace is a full collection. Open one, wander the designs, and
+            hire Debby when a look clicks.
           </p>
         </Reveal>
 
@@ -26,14 +26,14 @@ export function WorkSpaces() {
             <Reveal key={category.id}>
               <Link
                 href={`/work/${category.slug}`}
-                className="group relative block overflow-hidden border border-border/80 bg-secondary/40 transition duration-500 hover:-translate-y-1 hover:border-gold/60"
+                className="group relative block overflow-hidden border border-border/80 bg-secondary/40 transition duration-500 hover:-translate-y-1.5 hover:border-gold/60 hover:shadow-[0_28px_70px_rgba(28,28,30,0.16)]"
               >
                 <div className="relative aspect-[16/11]">
                   <Image
                     src={category.cover}
-                    alt={category.title}
+                    alt={`${category.title} workspace by IDOWU DEBORAH AYOKA`}
                     fill
-                    className="object-cover transition duration-700 group-hover:scale-[1.04]"
+                    className="object-cover transition duration-700 group-hover:scale-[1.05]"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/35 to-transparent" />
@@ -49,16 +49,10 @@ export function WorkSpaces() {
                     </p>
                     <div className="mt-4 flex flex-wrap items-center gap-2">
                       <Badge className="bg-gold text-charcoal hover:bg-gold">
-                        {category.pieceCount} designs
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border-white/40 text-white"
-                      >
-                        From {formatUsd(category.fromPriceUsd)}
+                        Full collection
                       </Badge>
                       <span className="ml-auto inline-flex items-center gap-1 text-xs uppercase tracking-[0.14em] text-gold">
-                        Open
+                        Enter studio
                         <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </span>
                     </div>

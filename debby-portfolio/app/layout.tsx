@@ -41,9 +41,12 @@ export const metadata: Metadata = {
   },
   description: seo.description,
   keywords: [...seo.keywords],
-  authors: [{ name: site.name, url: "https://debbytella.com" }],
-  creator: site.name,
-  publisher: site.name,
+  authors: [
+    { name: site.legalName, url: "https://debbytella.com" },
+    { name: site.name, url: "https://debbytella.com" },
+  ],
+  creator: `${site.legalName} (${site.name})`,
+  publisher: `${site.legalName} — ${site.name}`,
   category: "Graphic Design",
   applicationName: "Debby Tella Portfolio",
   alternates: {

@@ -42,6 +42,12 @@ const ConversionShowcase = nextDynamic(() =>
 const WorkGateway = nextDynamic(() =>
   import("@/components/home/work-gateway").then((m) => m.WorkGateway)
 );
+const PrestigeTicker = nextDynamic(() =>
+  import("@/components/home/prestige-ticker").then((m) => m.PrestigeTicker)
+);
+const ExploreMagnet = nextDynamic(() =>
+  import("@/components/home/explore-magnet").then((m) => m.ExploreMagnet)
+);
 const TestimonialsCarousel = nextDynamic(() =>
   import("@/components/testimonials/testimonials-carousel").then(
     (m) => m.TestimonialsCarousel
@@ -69,7 +75,15 @@ export default async function HomePage() {
     <div className="relative">
       <Hero />
 
+      <div className="content-lazy">
+        <PrestigeTicker />
+      </div>
+
       <FeaturedWorkCarousel />
+
+      <div className="content-lazy">
+        <ExploreMagnet />
+      </div>
 
       <div className="content-lazy">
         <TrustStrip />

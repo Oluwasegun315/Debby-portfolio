@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/data/site";
 import { Badge } from "@/components/ui/badge";
@@ -8,9 +9,9 @@ import { skills } from "@/data/experience";
 import { Reveal } from "@/components/motion/reveal";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About IDOWU DEBORAH AYOKA (Debby Tella)",
   description:
-    "Learn about Debby Tella, a graphic designer with 3+ years of experience in visual identity, branding and marketing design.",
+    "About IDOWU DEBORAH AYOKA — known as Debby Tella — a Nigeria graphic designer with 3+ years experience in social media, Canva, presentations, magazine, mural and stained glass design.",
 };
 
 export default function AboutPage() {
@@ -21,87 +22,62 @@ export default function AboutPage() {
       <Reveal>
         <p className="text-xs uppercase tracking-[0.22em] text-gold">About</p>
         <h1 className="mt-3 max-w-3xl font-serif text-4xl sm:text-6xl">
-          Debby Tella — graphic designer.
+          IDOWU DEBORAH AYOKA
         </h1>
+        <p className="mt-2 text-lg text-gold">Debby Tella · Graphic Designer</p>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          I believe design is more than making things look good. It is about understanding an idea,
-          finding the right visual language and turning that idea into something people can see,
-          understand and remember.
+          Design is more than looking good. It is understanding an idea, finding the
+          right visual language, and turning that idea into something people remember.
         </p>
       </Reveal>
 
       <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            I am Debby, a graphic designer with {site.experience.toLowerCase()} helping brands,
-            businesses and product sellers communicate with more clarity. A core part of my work is
-            product label design — juice labels, oil packaging, bottle graphics and related visual
-            design.
+            I am <strong className="text-foreground">IDOWU DEBORAH AYOKA</strong>,
+            known professionally as Debby Tella — a graphic designer with{" "}
+            {site.experience.toLowerCase()} helping brands, businesses and product
+            sellers communicate with clarity.
           </p>
           <p>
-            My process is calm and structured. I start with the brief, not the decoration. I look for
-            what the label or design needs to do — attract, explain, distinguish, sell — and then
-            build a visual that supports that purpose.
+            My work spans social media design, Canva templates, presentations, ebook
+            covers, magazine layouts, mural concepts and stained glass inspired art.
+            Buyers come for polish, stay for patience, and return for upgrades.
           </p>
           <p>
-            Clients often come back for upgrades and new product labels. Clear communication,
-            careful revisions and reliable delivery are as important as the design itself.
+            The process is calm and structured: start with the brief, define the job
+            the design must do, then build visuals that attract, explain and sell.
           </p>
-        </div>
-        <div
-          className="relative min-h-[360px] bg-charcoal p-8 text-white"
-          role="img"
-          aria-label="Portrait placeholder for Debby Tella. Replace public/images/debby-portrait.jpg later."
-        >
-          <p className="text-xs uppercase tracking-[0.2em] text-white/50">Portrait placeholder</p>
-          <p className="mt-24 font-serif text-4xl">DT</p>
-          <p className="mt-4 text-sm text-white/60">
-            Replace this block with <code>/public/images/debby-portrait.jpg</code>
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {[
-          { value: site.stats.experience, label: site.stats.experienceLabel },
-          { value: site.stats.projects, label: site.stats.projectsLabel, note: site.stats.projectsNote },
-          { value: site.stats.clients, label: site.stats.clientsLabel, note: site.stats.clientsNote },
-          { value: "Visual", label: site.specialization },
-        ].map((stat) => (
-          <div key={stat.label} className="border border-border p-5">
-            <p className="font-serif text-3xl">{stat.value}</p>
-            <p className="mt-1 text-sm">{stat.label}</p>
-            {"note" in stat && stat.note ? (
-              <p className="mt-2 text-xs text-muted-foreground">{stat.note}</p>
-            ) : null}
+          <div className="flex flex-wrap gap-2 pt-2">
+            <Badge variant="outline">Nigeria · Worldwide</Badge>
+            <Badge variant="outline">{site.responseTimeShort}</Badge>
+            <Badge variant="outline">{site.availabilityShort}</Badge>
           </div>
-        ))}
+        </div>
+        <div className="relative min-h-[420px] overflow-hidden border border-border bg-charcoal">
+          <Image
+            src="/portrait/debby.jpg"
+            alt="IDOWU DEBORAH AYOKA — Debby Tella graphic designer"
+            fill
+            className="object-cover object-[center_18%]"
+            sizes="(max-width: 1024px) 100vw, 420px"
+            priority
+          />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 text-white">
+            <p className="font-serif text-2xl">Debby Tella</p>
+            <p className="text-sm text-gold">IDOWU DEBORAH AYOKA</p>
+          </div>
+        </div>
       </div>
 
-      <section className="mt-20">
-        <h2 className="font-serif text-3xl">Values</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {[
-            ["Clarity", "Design should make the message easier, not louder."],
-            ["Craft", "Typography, color and composition deserve patience."],
-            ["Partnership", "The best work happens when the client is part of the process."],
-          ].map(([title, text]) => (
-            <div key={title} className="border border-border p-5">
-              <h3 className="font-serif text-xl">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="mt-20">
-        <h2 className="font-serif text-3xl">Tools</h2>
+      <section className="mt-16">
+        <h2 className="font-serif text-3xl">Tools & craft</h2>
         <div className="mt-6 space-y-4">
           {designSkills.map((skill) => (
             <div key={skill.name}>
               <div className="mb-2 flex justify-between text-sm">
                 <span>{skill.name}</span>
-                <Badge variant="outline">{skill.category}</Badge>
+                <span className="text-muted-foreground">{skill.level}%</span>
               </div>
               <Progress value={skill.level} />
             </div>
@@ -109,9 +85,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Button asChild className="mt-12">
-        <Link href="/start-project">Start a Project</Link>
-      </Button>
+      <div className="mt-12 flex flex-wrap gap-3">
+        <Button asChild className="bg-gold text-charcoal hover:bg-gold/90">
+          <Link href="/my-work">Explore My Work</Link>
+        </Button>
+        <Button asChild variant="outline">
+          <Link href="/#pay-and-contact">Hire Debby</Link>
+        </Button>
+      </div>
     </div>
   );
 }

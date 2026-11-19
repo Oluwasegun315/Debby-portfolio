@@ -1,5 +1,6 @@
 export const site = {
   name: "Debby Tella",
+  legalName: "IDOWU DEBORAH AYOKA",
   professionalName: "Debby",
   profession: "Graphic Designer",
   experience: "3+ Years",
@@ -23,9 +24,9 @@ export const site = {
   offDays: ["Saturday", "Sunday"],
   tagline: "Design that stops the scroll and sells the story.",
   shortBio:
-    "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience creating social media designs, Canva templates, PowerPoint and presentation designs, ebook covers and clean visual designs for brands and businesses.",
+    "Hi, I'm IDOWU DEBORAH AYOKA — known as Debby Tella — a graphic designer with 3+ years of experience creating social media designs, Canva templates, PowerPoint and presentation designs, ebook covers, magazine, mural, stained glass and clean visual designs for brands and businesses.",
   footerLine:
-    "Graphic designer specializing in social media, Canva templates, presentations, ebook covers and visual design that helps ideas sell.",
+    "IDOWU DEBORAH AYOKA (Debby Tella) — graphic designer specializing in social media, Canva, presentations, ebook covers, magazine, mural and stained glass design.",
   specialization: "Social Media, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
   payments: {
     headline: "Pay the way that works for you",
@@ -142,13 +143,18 @@ export const site = {
 } as const;
 
 export const seo = {
-  title: "Debby Tella — Graphic Designer | Social, Magazine, Mural & More",
+  title:
+    "IDOWU DEBORAH AYOKA (Debby Tella) — Graphic Designer Nigeria | Social, Magazine, Mural",
   description:
-    "Hire Debby Tella, a Nigeria-based graphic designer with 3+ years experience. Social media, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
+    "Hire IDOWU DEBORAH AYOKA, known as Debby Tella — Nigeria graphic designer with 3+ years experience. Social media design, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
   keywords: [
+    "IDOWU DEBORAH AYOKA",
+    "Idowu Deborah Ayoka",
     "Debby Tella",
+    "Debby Tella graphic designer",
     "graphic designer Nigeria",
-    "social media designer",
+    "hire Debby Tella",
+    "social media designer Nigeria",
     "Canva template designer",
     "PowerPoint designer",
     "presentation design",
@@ -156,9 +162,8 @@ export const seo = {
     "magazine design",
     "mural design",
     "stained glass design",
-    "hire graphic designer",
     "Opay PalmPay designer",
-    "Fiverr graphic designer yemisi4",
+    "Fiverr yemisi4",
   ],
   ogImage: "/portrait/debby.jpg",
   locale: "en_NG",

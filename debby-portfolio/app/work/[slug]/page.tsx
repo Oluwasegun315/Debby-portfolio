@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getWorkCategory, workCategories, formatUsd } from "@/data/work-categories";
+import { getWorkCategory, workCategories } from "@/data/work-categories";
 import { site } from "@/data/site";
 import { WorkPreviewCard } from "@/components/portfolio/work-preview-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FiverrIcon } from "@/components/icons/brand-icons";
 import { HireDebbyButton } from "@/components/contact/hire-debby-button";
+import { WhatsAppIcon } from "@/components/icons/brand-icons";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getWorkCategory(slug);
   if (!category) return { title: "Work" };
   return {
-    title: category.title,
-    description: category.description,
+    title: `${category.title} by IDOWU DEBORAH AYOKA (Debby Tella)`,
+    description: `${category.description} Designed by IDOWU DEBORAH AYOKA — Debby Tella, graphic designer in Nigeria.`,
   };
 }
 
@@ -50,18 +50,24 @@ export default async function WorkCategoryPage({ params }: Props) {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Badge className="bg-primary text-primary-foreground hover:bg-primary">
-              {category.pieceCount} designs
+              Full collection
             </Badge>
-            <Badge variant="outline">From {formatUsd(category.fromPriceUsd)}</Badge>
+            <Badge variant="outline">By IDOWU DEBORAH AYOKA</Badge>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button
               asChild
-              className="whitespace-nowrap bg-primary text-primary-foreground hover:bg-primary/90"
+              className="whitespace-nowrap bg-gold text-charcoal hover:bg-gold/90"
             >
-              <a href={site.fiverr} target="_blank" rel="noreferrer">
-                <FiverrIcon className="h-4 w-4" />
-                View on Fiverr
+              <a
+                href={`${site.whatsapp}?text=${encodeURIComponent(
+                  `Hi Debby (IDOWU DEBORAH AYOKA), I love your ${category.title} work and want to hire you.`
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                WhatsApp Debby
               </a>
             </Button>
             <HireDebbyButton className="whitespace-nowrap" />
