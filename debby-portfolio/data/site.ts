@@ -26,7 +26,7 @@ export const site = {
     "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience creating social media designs, Canva templates, PowerPoint and presentation designs, ebook covers and clean visual designs for brands and businesses.",
   footerLine:
     "Graphic designer specializing in social media, Canva templates, presentations, ebook covers and visual design that helps ideas sell.",
-  specialization: "Social Media, Canva, Presentations, Ebook Covers & Graphic Design",
+  specialization: "Social Media, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
   payments: {
     headline: "Pay the way that works for you",
     note: "PayPal is not accepted. For crypto and other methods, message Debby and she will share the details.",
@@ -142,9 +142,9 @@ export const site = {
 } as const;
 
 export const seo = {
-  title: "Debby Tella — Graphic Designer | Social Media, Canva & Presentations",
+  title: "Debby Tella — Graphic Designer | Social, Magazine, Mural & More",
   description:
-    "Hire Debby Tella, a Nigeria-based graphic designer with 3+ years experience. Social media design, Canva templates, PowerPoint presentations and ebook covers. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
+    "Hire Debby Tella, a Nigeria-based graphic designer with 3+ years experience. Social media, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
   keywords: [
     "Debby Tella",
     "graphic designer Nigeria",
@@ -153,6 +153,9 @@ export const seo = {
     "PowerPoint designer",
     "presentation design",
     "ebook cover design",
+    "magazine design",
+    "mural design",
+    "stained glass design",
     "hire graphic designer",
     "Opay PalmPay designer",
     "Fiverr graphic designer yemisi4",

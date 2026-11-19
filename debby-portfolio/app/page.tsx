@@ -1,46 +1,48 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import nextDynamic from "next/dynamic";
 import Link from "next/link";
 import { Hero } from "@/components/hero/hero";
 import { Reveal } from "@/components/motion/reveal";
 import { FeaturedWorkCarousel } from "@/components/home/featured-work-carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { getFeaturedTestimonials } from "@/data/testimonials";
+import { getFeaturedTestimonials } from "@/lib/reviews";
 import { workCategories } from "@/data/work-categories";
 import { seo, site } from "@/data/site";
 
-const TrustStrip = dynamic(() =>
+export const dynamic = "force-dynamic";
+
+const TrustStrip = nextDynamic(() =>
   import("@/components/home/trust-strip").then((m) => m.TrustStrip)
 );
-const BeforeAfterShowcase = dynamic(() =>
+const BeforeAfterShowcase = nextDynamic(() =>
   import("@/components/home/before-after-showcase").then((m) => m.BeforeAfterShowcase)
 );
-const DesignPackages = dynamic(() =>
+const DesignPackages = nextDynamic(() =>
   import("@/components/home/design-packages").then((m) => m.DesignPackages)
 );
-const BookingFaqSection = dynamic(() =>
+const BookingFaqSection = nextDynamic(() =>
   import("@/components/home/booking-faq-section").then((m) => m.BookingFaqSection)
 );
-const SignatureCaseStudy = dynamic(() =>
+const SignatureCaseStudy = nextDynamic(() =>
   import("@/components/home/signature-case-study").then((m) => m.SignatureCaseStudy)
 );
-const PayAndContact = dynamic(() =>
+const PayAndContact = nextDynamic(() =>
   import("@/components/home/pay-and-contact").then((m) => m.PayAndContact)
 );
-const HirePath = dynamic(() =>
+const HirePath = nextDynamic(() =>
   import("@/components/home/hire-path").then((m) => m.HirePath)
 );
-const OrderStrip = dynamic(() =>
+const OrderStrip = nextDynamic(() =>
   import("@/components/home/order-strip").then((m) => m.OrderStrip)
 );
-const ConversionShowcase = dynamic(() =>
+const ConversionShowcase = nextDynamic(() =>
   import("@/components/home/conversion-showcase").then((m) => m.ConversionShowcase)
 );
-const WorkGateway = dynamic(() =>
+const WorkGateway = nextDynamic(() =>
   import("@/components/home/work-gateway").then((m) => m.WorkGateway)
 );
-const TestimonialsCarousel = dynamic(() =>
+const TestimonialsCarousel = nextDynamic(() =>
   import("@/components/testimonials/testimonials-carousel").then(
     (m) => m.TestimonialsCarousel
   )
@@ -59,8 +61,8 @@ const process = [
   { step: "05", title: "Deliver", text: "You receive organized files, ready for print, digital or both — with clear usage notes." },
 ];
 
-export default function HomePage() {
-  const quotes = getFeaturedTestimonials();
+export default async function HomePage() {
+  const quotes = await getFeaturedTestimonials();
   const totalPieces = workCategories.reduce((sum, c) => sum + c.pieceCount, 0);
 
   return (
@@ -165,7 +167,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="grid grid-cols-2 gap-4">
-              {["Social Media", "Canva Templates", "Presentations", "Ebook Covers"].map((item) => (
+              {["Social Media", "Canva Templates", "Magazine", "Mural", "Stained Glass", "Ebook Covers"].map((item) => (
                 <div key={item} className="border border-white/10 p-5">
                   <p className="font-serif text-xl">{item}</p>
                 </div>

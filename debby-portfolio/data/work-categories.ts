@@ -153,6 +153,63 @@ const ebookCoverPieces = buildPieces({
   basePrice: 42,
 });
 
+const magazineDesignPieces = buildPieces({
+  count: 24,
+  prefix: "magazine-design",
+  folder: "magazine-design",
+  idPrefix: "mgz",
+  category: "Magazine Design",
+  shortDescription:
+    "Editorial magazine layout design with strong hierarchy and polished spreads.",
+  fullDescription:
+    "A Magazine Design piece from Debby’s collection. Built for editorial storytelling — clean spreads, intentional typography, and layouts that feel premium in print or digital magazine formats.",
+  deliverables: [
+    "Magazine page / spread design",
+    "Editorial typography treatment",
+    "Print and digital-ready composition",
+    "Export-ready artwork",
+  ],
+  basePrice: 55,
+});
+
+const muralDesignPieces = buildPieces({
+  count: 36,
+  prefix: "mural-design",
+  folder: "mural-design",
+  idPrefix: "mrl",
+  category: "Mural Design",
+  shortDescription:
+    "Bold mural concept design made for walls, spaces and brand environments.",
+  fullDescription:
+    "A Mural Design from Debby’s collection. Created for spaces that need presence — strong composition, memorable visuals, and concepts ready to guide real-world wall or large-format production.",
+  deliverables: [
+    "Mural concept artwork",
+    "Large-format composition",
+    "Brand / space-ready visual direction",
+    "Export-ready design file",
+  ],
+  basePrice: 80,
+});
+
+const stainedGlassPieces = buildPieces({
+  count: 37,
+  prefix: "stained-glass",
+  folder: "stained-glass-design",
+  idPrefix: "stg",
+  category: "Stained Glass Design",
+  shortDescription:
+    "Decorative stained glass style design with color, pattern and craft detail.",
+  fullDescription:
+    "A Stained Glass Design from Debby’s collection. Rich color, patterned craft, and decorative composition for windows, brand art, product packaging accents, or inspired visual storytelling.",
+  deliverables: [
+    "Stained-glass inspired artwork",
+    "Color and pattern treatment",
+    "Decorative composition ready for use",
+    "High-resolution export",
+  ],
+  basePrice: 48,
+});
+
 function toCategory(
   slug: string,
   title: string,
@@ -202,6 +259,24 @@ export const workCategories: WorkCategory[] = [
     "Ebook Cover Design",
     "A full Ebook Cover Design collection made to sell books at first glance. Open this workspace to preview every cover in the set.",
     ebookCoverPieces
+  ),
+  toCategory(
+    "magazine-design",
+    "Magazine Design",
+    "Editorial magazine designs with polished spreads and clear storytelling. Open this workspace to preview every magazine piece.",
+    magazineDesignPieces
+  ),
+  toCategory(
+    "mural-design",
+    "Mural Design",
+    "Bold mural concepts for walls, spaces and brand environments. Open this workspace to preview the full mural set.",
+    muralDesignPieces
+  ),
+  toCategory(
+    "stained-glass-design",
+    "Stained Glass Design",
+    "Decorative stained glass inspired designs rich with color and craft. Open this workspace to preview every piece in the collection.",
+    stainedGlassPieces
   ),
 ];
 

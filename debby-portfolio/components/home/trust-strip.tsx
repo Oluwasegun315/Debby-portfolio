@@ -1,14 +1,33 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Clock3, ShieldCheck, Star } from "lucide-react";
 import { site } from "@/data/site";
-import { getFeaturedTestimonials } from "@/data/testimonials";
+import type { Testimonial } from "@/data/testimonials";
+import { seedTestimonials } from "@/data/testimonials";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
 
 export function TrustStrip() {
-  const quotes = getFeaturedTestimonials().slice(0, 3);
+  const [quotes, setQuotes] = useState<Testimonial[]>(
+    seedTestimonials.filter((t) => t.featured).slice(0, 3)
+  );
+
+  useEffect(() => {
+    let active = true;
+    fetch("/api/reviews")
+      .then((res) => res.json())
+      .then((data) => {
+        if (!active || !data?.ok || !Array.isArray(data.reviews)) return;
+        const featured = data.reviews.filter((t: Testimonial) => t.featured).slice(0, 3);
+        if (featured.length) setQuotes(featured);
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+    };
+  }, []);
 
   return (
     <section className="border-b bg-background py-16">
@@ -40,9 +59,9 @@ export function TrustStrip() {
                 <Star className="h-4 w-4" />
                 Real reviews
               </p>
-              <p className="mt-3 font-serif text-3xl">5.0 style praise</p>
+              <p className="mt-3 font-serif text-3xl">Growing live</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Buyers come back for upgrades and new projects.
+                New Fiverr buyer reviews are added as Debby delivers orders.
               </p>
             </div>
           </div>
@@ -53,7 +72,7 @@ export function TrustStrip() {
             <Reveal key={quote.id}>
               <blockquote className="h-full border border-border bg-card p-5">
                 <div className="flex gap-1 text-gold">
-                  {Array.from({ length: quote.rating }).map((_, i) => (
+                  {Array.from({ length: Math.round(quote.rating) }).map((_, i) => (
                     <Star key={i} className="h-3.5 w-3.5 fill-current" />
                   ))}
                 </div>

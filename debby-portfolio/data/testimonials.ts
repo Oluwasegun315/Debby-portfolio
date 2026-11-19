@@ -13,7 +13,8 @@ export type Testimonial = {
   source?: string;
 };
 
-export const testimonials: Testimonial[] = [
+/** Seed reviews already on the site. New Fiverr reviews are appended in reviews-live.json */
+export const seedTestimonials: Testimonial[] = [
   {
     id: "1",
     name: "swindlesea",
@@ -21,8 +22,7 @@ export const testimonials: Testimonial[] = [
     company: "Label Design Project",
     location: "United States",
     projectType: "Label Design",
-    quote:
-      "Thank you for the good work, the upgrade is just what I needed.",
+    quote: "Thank you for the good work, the upgrade is just what I needed.",
     rating: 5,
     initials: "S",
     featured: true,
@@ -87,6 +87,9 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export function getFeaturedTestimonials(): Testimonial[] {
-  return testimonials.filter((t) => t.featured);
+/** @deprecated Prefer getAllTestimonials from @/lib/reviews for live + seed reviews */
+export const testimonials = seedTestimonials;
+
+export function getFeaturedTestimonials() {
+  return seedTestimonials.filter((t) => t.featured);
 }

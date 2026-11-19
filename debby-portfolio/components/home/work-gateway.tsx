@@ -23,7 +23,7 @@ export function WorkGateway() {
             Check all my work
           </h2>
           <p className="mt-4 max-w-lg text-muted-foreground">
-            Every design lives in My Work — Social Media, Canva Templates,
+            Every design lives in My Work — Social Media, Canva, Magazine, Mural, Stained Glass,
             PowerPoint, Presentation Design and Ebook Cover Design. Open the hub,
             pick a workspace, then preview and order.
           </p>

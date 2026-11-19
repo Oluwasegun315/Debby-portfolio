@@ -1,10 +1,29 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
-import { testimonials } from "@/data/testimonials";
+import type { Testimonial } from "@/data/testimonials";
+import { seedTestimonials } from "@/data/testimonials";
 
 export function ReviewMarquee() {
-  const items = [...testimonials, ...testimonials];
+  const [reviews, setReviews] = useState<Testimonial[]>(seedTestimonials);
+
+  useEffect(() => {
+    let active = true;
+    fetch("/api/reviews")
+      .then((res) => res.json())
+      .then((data) => {
+        if (active && data?.ok && Array.isArray(data.reviews) && data.reviews.length) {
+          setReviews(data.reviews);
+        }
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const items = [...reviews, ...reviews];
 
   return (
     <div className="review-marquee-track border-y border-border/80 bg-secondary/40 py-4">
