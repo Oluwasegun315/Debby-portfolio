@@ -72,11 +72,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Button
-            asChild
-            size="sm"
-            className="hidden bg-gold text-charcoal hover:bg-gold/90 sm:inline-flex"
-          >
+          <Button asChild size="sm" variant="gold" className="hidden sm:inline-flex">
             <a
               href={`${site.whatsapp}?text=${whatsappText}`}
               target="_blank"

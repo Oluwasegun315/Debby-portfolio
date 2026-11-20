@@ -42,7 +42,8 @@ export function StickyHireBar() {
             <Button
               asChild
               size="sm"
-              className="h-9 rounded-full bg-gold px-4 text-charcoal hover:bg-gold/90"
+              variant="gold"
+              className="h-9 rounded-full px-4"
             >
               <a href={`${site.whatsapp}?text=${whatsappText}`} target="_blank" rel="noreferrer">
                 <WhatsAppIcon className="h-3.5 w-3.5" />
@@ -53,7 +54,7 @@ export function StickyHireBar() {
               asChild
               size="sm"
               variant="outline"
-              className="h-9 rounded-full border-white/25 bg-transparent px-4 text-white hover:bg-white hover:text-charcoal"
+              className="h-9 rounded-full border-white/25 bg-transparent px-4 text-white hover:border-gold/50 hover:bg-white hover:text-charcoal"
             >
               <Link href="/#pay-and-contact">Pay</Link>
             </Button>
