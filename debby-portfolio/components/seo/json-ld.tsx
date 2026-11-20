@@ -21,7 +21,7 @@ export function JsonLd() {
     jobTitle: "Graphic Designer",
     description: seo.description,
     url: siteUrl,
-    image: `${siteUrl}/portrait/debby.jpg`,
+    image: `${siteUrl}/portrait/debby.png`,
     email: site.email,
     sameAs: [site.fiverr, site.whatsapp],
     knowsAbout: [
@@ -49,7 +49,7 @@ export function JsonLd() {
     alternateName: [site.legalName, "Debby Tella Portfolio"],
     description: seo.description,
     url: siteUrl,
-    image: `${siteUrl}/portrait/debby.jpg`,
+    image: `${siteUrl}/portrait/debby.png`,
     email: site.email,
     priceRange: "$$",
     areaServed: [{ "@type": "Place", name: "Worldwide" }],

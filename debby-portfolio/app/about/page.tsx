@@ -56,7 +56,7 @@ export default function AboutPage() {
         </div>
         <div className="relative min-h-[420px] overflow-hidden border border-border bg-charcoal">
           <Image
-            src="/portrait/debby.jpg"
+            src="/portrait/debby.png"
             alt="Debby Tella — graphic designer"
             fill
             className="object-cover object-[center_18%]"

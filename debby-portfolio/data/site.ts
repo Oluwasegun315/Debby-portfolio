@@ -166,7 +166,7 @@ export const seo = {
     "product design",
     "Opay PalmPay designer",
   ],
-  ogImage: "/portrait/debby.jpg",
+  ogImage: "/portrait/debby.png",
   locale: "en_US",
   geo: {
     region: "Worldwide",
