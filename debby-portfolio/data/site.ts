@@ -27,22 +27,22 @@ export const site = {
     "Hi, I'm IDOWU DEBORAH AYOKA — known as Debby Tella — a graphic designer with 3+ years of experience creating social media designs, Canva templates, PowerPoint and presentation designs, ebook covers, magazine, mural, stained glass and clean visual designs for brands and businesses.",
   footerLine:
     "IDOWU DEBORAH AYOKA (Debby Tella) — graphic designer specializing in social media, Canva, presentations, ebook covers, magazine, mural and stained glass design.",
-  specialization: "Social Media, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
+  specialization: "Social Media, Digital Marketing, Jersey Sublimation, Product Design, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
   payments: {
     headline: "Pay the way that works for you",
     note: "PayPal is not accepted. For crypto and other methods, message Debby and she will share the details.",
-    nigeriaBank: {
+    bankDetails: {
       accountName: "IDOWU DEBORAH AYOKA",
       accountNumber: "9135101748",
-      banks: ["Opay", "PalmPay", "Nigeria bank transfer"],
-      note: "When paying via a Nigeria bank account / Opay / PalmPay, use these details. The name that will show is IDOWU DEBORAH AYOKA.",
+      banks: ["Opay", "PalmPay", "Bank transfer"],
+      note: "When paying via Opay, PalmPay or bank transfer, use these details. The account name that will show is IDOWU DEBORAH AYOKA.",
     },
     methods: [
       {
         id: "bank",
-        title: "Nigeria bank / Opay / PalmPay",
+        title: "Bank / Opay / PalmPay",
         detail:
-          "Transfer to 9135101748 — IDOWU DEBORAH AYOKA. Works for Opay, PalmPay and Nigeria bank transfers.",
+          "Transfer to 9135101748 — IDOWU DEBORAH AYOKA. Works for Opay, PalmPay and bank transfers.",
       },
       {
         id: "crypto",
@@ -144,17 +144,16 @@ export const site = {
 
 export const seo = {
   title:
-    "IDOWU DEBORAH AYOKA (Debby Tella) — Graphic Designer Nigeria | Social, Magazine, Mural",
+    "IDOWU DEBORAH AYOKA (Debby Tella) — Graphic Designer | Social, Magazine, Mural",
   description:
-    "Hire IDOWU DEBORAH AYOKA, known as Debby Tella — Nigeria graphic designer with 3+ years experience. Social media design, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
+    "Hire IDOWU DEBORAH AYOKA, known as Debby Tella — professional graphic designer with 3+ years experience. Social media design, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
   keywords: [
     "IDOWU DEBORAH AYOKA",
     "Idowu Deborah Ayoka",
     "Debby Tella",
     "Debby Tella graphic designer",
-    "graphic designer Nigeria",
     "hire Debby Tella",
-    "social media designer Nigeria",
+    "social media designer",
     "Canva template designer",
     "PowerPoint designer",
     "presentation design",
@@ -162,13 +161,16 @@ export const seo = {
     "magazine design",
     "mural design",
     "stained glass design",
+    "digital marketing design",
+    "jersey sublimation design",
+    "product design",
     "Opay PalmPay designer",
     "Fiverr yemisi4",
   ],
   ogImage: "/portrait/debby.jpg",
-  locale: "en_NG",
+  locale: "en_US",
   geo: {
-    region: "NG",
-    placename: "Nigeria",
+    region: "Worldwide",
+    placename: "Worldwide",
   },
 };

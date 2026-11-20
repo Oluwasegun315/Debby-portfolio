@@ -181,7 +181,7 @@ export default async function HomePage() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="grid grid-cols-2 gap-4">
-              {["Social Media", "Canva Templates", "Magazine", "Mural", "Stained Glass", "Ebook Covers"].map((item) => (
+              {["Social Media", "Digital Marketing", "Jersey Sublimation", "Product Design", "Magazine", "Mural"].map((item) => (
                 <div key={item} className="border border-white/10 p-5">
                   <p className="font-serif text-xl">{item}</p>
                 </div>

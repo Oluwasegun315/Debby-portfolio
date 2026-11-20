@@ -18,7 +18,7 @@ const laneB = [
   "Explore the studios",
   "Bank · Opay · PalmPay · Crypto",
   "Replies in 4–5 hours",
-  "Nigeria · Worldwide",
+  "Available worldwide",
 ];
 
 export function PrestigeTicker() {

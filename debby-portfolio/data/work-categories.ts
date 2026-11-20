@@ -210,6 +210,63 @@ const stainedGlassPieces = buildPieces({
   basePrice: 48,
 });
 
+const digitalMarketingPieces = buildPieces({
+  count: 24,
+  prefix: "digital-marketing",
+  folder: "digital-marketing",
+  idPrefix: "dmkt",
+  category: "Digital Marketing",
+  shortDescription:
+    "Digital marketing creative built to promote offers, brands and campaigns.",
+  fullDescription:
+    "A Digital Marketing design from Debby’s collection. Created for ads, promos and campaign visuals that feel clear, persuasive and ready to perform across digital channels.",
+  deliverables: [
+    "Campaign-ready marketing graphic",
+    "Clear offer hierarchy",
+    "Platform-friendly composition",
+    "Export-ready marketing artwork",
+  ],
+  basePrice: 45,
+});
+
+const jerseySublimationPieces = buildPieces({
+  count: 42,
+  prefix: "jersey-sublimation",
+  folder: "jersey-sublimation",
+  idPrefix: "jrs",
+  category: "Jersey Sublimation",
+  shortDescription:
+    "Bold jersey sublimation design for teams, sportswear and custom kits.",
+  fullDescription:
+    "A Jersey Sublimation design from Debby’s collection. Built for sports kits and custom apparel — strong patterns, readable numbers/names, and print-ready visual direction.",
+  deliverables: [
+    "Jersey sublimation artwork",
+    "Team / kit visual layout",
+    "Print-oriented composition",
+    "High-resolution design file",
+  ],
+  basePrice: 70,
+});
+
+const productDesignPieces = buildPieces({
+  count: 24,
+  prefix: "product-design",
+  folder: "product-design",
+  idPrefix: "prdsgn",
+  category: "Product Design",
+  shortDescription:
+    "Product-focused visual design that helps items look ready to sell.",
+  fullDescription:
+    "A Product Design piece from Debby’s collection. Created to present products with clarity and premium polish — ideal for packaging support, product visuals and sales-ready presentation.",
+  deliverables: [
+    "Product visual design",
+    "Clean commercial composition",
+    "Brand-aligned treatment",
+    "Export-ready artwork",
+  ],
+  basePrice: 55,
+});
+
 function toCategory(
   slug: string,
   title: string,
@@ -277,6 +334,24 @@ export const workCategories: WorkCategory[] = [
     "Stained Glass Design",
     "Decorative stained glass inspired designs rich with color and craft. Open this workspace to preview every piece in the collection.",
     stainedGlassPieces
+  ),
+  toCategory(
+    "digital-marketing",
+    "Digital Marketing",
+    "Campaign-ready digital marketing creatives for ads, offers and brand promotion. Open this workspace to preview the full set.",
+    digitalMarketingPieces
+  ),
+  toCategory(
+    "jersey-sublimation",
+    "Jersey Sublimation",
+    "Custom jersey sublimation designs for teams and sportswear. Open this workspace to preview every kit visual.",
+    jerseySublimationPieces
+  ),
+  toCategory(
+    "product-design",
+    "Product Design",
+    "Product-focused visuals that help items look polished and ready to sell. Open this workspace to preview every piece.",
+    productDesignPieces
   ),
 ];
 

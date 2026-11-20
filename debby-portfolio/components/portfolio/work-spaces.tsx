@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
 import { Badge } from "@/components/ui/badge";
-import { workCategories } from "@/data/work-categories";
+import { formatUsd, workCategories } from "@/data/work-categories";
 
 export function WorkSpaces() {
   return (
@@ -49,7 +49,10 @@ export function WorkSpaces() {
                     </p>
                     <div className="mt-4 flex flex-wrap items-center gap-2">
                       <Badge className="bg-gold text-charcoal hover:bg-gold">
-                        Full collection
+                        {category.pieceCount} designs
+                      </Badge>
+                      <Badge variant="outline" className="border-white/40 text-white">
+                        From {formatUsd(category.fromPriceUsd)}
                       </Badge>
                       <span className="ml-auto inline-flex items-center gap-1 text-xs uppercase tracking-[0.14em] text-gold">
                         Enter studio

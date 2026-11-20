@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Eye, Sparkles } from "lucide-react";
-import type { WorkPiece } from "@/data/work-categories";
+import { formatUsd, type WorkPiece } from "@/data/work-categories";
 import { site } from "@/data/site";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -50,10 +50,13 @@ export function WorkPreviewCard({
               sizes={fullWidth ? "(max-width: 768px) 100vw, 25vw" : "260px"}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/30 to-transparent" />
-            <div className="absolute left-3 top-3">
+            <div className="absolute left-3 right-3 top-3 flex items-start justify-between gap-2">
               <Badge className="bg-gold text-charcoal hover:bg-gold">{work.category}</Badge>
+              <span className="rounded-sm bg-white px-2.5 py-1 text-xs font-semibold text-charcoal">
+                {formatUsd(work.priceUsd)}
+              </span>
             </div>
-            <div className="absolute right-3 top-3 opacity-0 transition duration-300 group-hover:opacity-100">
+            <div className="absolute right-3 top-12 opacity-0 transition duration-300 group-hover:opacity-100">
               <span className="inline-flex items-center gap-1 rounded-sm bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-charcoal">
                 <Sparkles className="h-3 w-3 text-gold" />
                 Peek inside
@@ -92,7 +95,7 @@ export function WorkPreviewCard({
                   <Badge className="bg-gold text-charcoal hover:bg-gold">
                     {work.category}
                   </Badge>
-                  <Badge variant="outline">By IDOWU DEBORAH AYOKA</Badge>
+                  <Badge variant="outline">Worth {formatUsd(work.priceUsd)}</Badge>
                 </div>
                 <DialogTitle className="font-serif text-3xl leading-tight">
                   {work.title}
@@ -102,6 +105,15 @@ export function WorkPreviewCard({
                   WhatsApp or Gmail to hire.
                 </DialogDescription>
               </DialogHeader>
+
+              <div>
+                <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                  Project value
+                </p>
+                <p className="mt-1 font-serif text-4xl text-gold">
+                  {formatUsd(work.priceUsd)}
+                </p>
+              </div>
 
               <div>
                 <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">

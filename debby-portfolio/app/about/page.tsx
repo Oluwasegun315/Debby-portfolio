@@ -11,7 +11,7 @@ import { Reveal } from "@/components/motion/reveal";
 export const metadata: Metadata = {
   title: "About IDOWU DEBORAH AYOKA (Debby Tella)",
   description:
-    "About IDOWU DEBORAH AYOKA — known as Debby Tella — a Nigeria graphic designer with 3+ years experience in social media, Canva, presentations, magazine, mural and stained glass design.",
+    "About IDOWU DEBORAH AYOKA — known as Debby Tella — a professional graphic designer with 3+ years experience in social media, Canva, presentations, magazine, mural and stained glass design.",
 };
 
 export default function AboutPage() {
@@ -49,7 +49,7 @@ export default function AboutPage() {
             the design must do, then build visuals that attract, explain and sell.
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
-            <Badge variant="outline">Nigeria · Worldwide</Badge>
+            <Badge variant="outline">Available worldwide</Badge>
             <Badge variant="outline">{site.responseTimeShort}</Badge>
             <Badge variant="outline">{site.availabilityShort}</Badge>
           </div>

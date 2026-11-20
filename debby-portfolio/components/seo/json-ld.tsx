@@ -24,12 +24,6 @@ export function JsonLd() {
     url: siteUrl,
     image: `${siteUrl}/portrait/debby.jpg`,
     email: site.email,
-    telephone: "+2349135101748",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "NG",
-      addressLocality: "Nigeria",
-    },
     sameAs: [site.fiverr, site.whatsapp],
     knowsAbout: [
       "Graphic design",
@@ -41,6 +35,9 @@ export function JsonLd() {
       "Magazine design",
       "Mural design",
       "Stained glass design",
+      "Digital marketing design",
+      "Jersey sublimation design",
+      "Product design",
       "Brand visuals",
     ],
   };
@@ -54,13 +51,9 @@ export function JsonLd() {
     description: seo.description,
     url: siteUrl,
     image: `${siteUrl}/portrait/debby.jpg`,
-    telephone: "+2349135101748",
     email: site.email,
     priceRange: "$$",
-    areaServed: [
-      { "@type": "Country", name: "Nigeria" },
-      { "@type": "Place", name: "Worldwide" },
-    ],
+    areaServed: [{ "@type": "Place", name: "Worldwide" }],
     availableLanguage: ["English"],
     founder: { "@id": `${siteUrl}/#person` },
     employee: { "@id": `${siteUrl}/#person` },
@@ -114,7 +107,7 @@ export function JsonLd() {
         name: "Who is IDOWU DEBORAH AYOKA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "IDOWU DEBORAH AYOKA is a Nigeria-based graphic designer also known as Debby Tella. She creates social media designs, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design.",
+          text: "IDOWU DEBORAH AYOKA is a professional graphic designer also known as Debby Tella. She creates social media designs, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design.",
         },
       },
       ...faqs.map((item) => ({

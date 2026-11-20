@@ -48,7 +48,7 @@ export function Hero() {
             <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
               <p className="font-serif text-xl text-white sm:text-2xl">Debby Tella</p>
               <p className="mt-1 text-xs text-gold sm:text-sm">
-                Graphic Designer · {site.experience} · Nigeria
+                Graphic Designer · {site.experience}
               </p>
             </div>
           </div>

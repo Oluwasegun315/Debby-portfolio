@@ -36,7 +36,7 @@ export function Footer() {
             rel="noreferrer"
             className="mt-2 block text-sm text-gold hover:underline"
           >
-            WhatsApp · {site.phone}
+            Message on WhatsApp
           </a>
         </div>
         <div>

@@ -15,7 +15,7 @@ export const faqs: FaqItem[] = [
     id: "payment",
     question: "How can I pay Debby?",
     answer:
-      "You can pay by Nigeria bank transfer, Opay, or PalmPay using the account details on the site (9135101748 — IDOWU DEBORAH AYOKA). Crypto (BTC, USDT, Ethereum) and other methods are available after you message Debby. PayPal is not accepted. Fiverr is optional if you prefer that checkout.",
+      "You can pay by bank transfer, Opay, or PalmPay using the account details on the site (9135101748 — IDOWU DEBORAH AYOKA). Crypto (BTC, USDT, Ethereum) and other methods are available after you message Debby. PayPal is not accepted. Fiverr is optional if you prefer that checkout.",
   },
   {
     id: "timeline",
@@ -57,6 +57,6 @@ export const faqs: FaqItem[] = [
     id: "start",
     question: "How do I start a project?",
     answer:
-      "Message Debby on WhatsApp (09135101748) or Gmail (debbytella17@gmail.com). Say what you need and how you want to pay. She replies within 4–5 hours on weekdays.",
+      "Message Debby on WhatsApp or Gmail (debbytella17@gmail.com). Say what you need and how you want to pay. She replies within 4–5 hours on weekdays.",
   },
 ];

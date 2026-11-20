@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getWorkCategory, workCategories } from "@/data/work-categories";
+import { formatUsd, getWorkCategory, workCategories } from "@/data/work-categories";
 import { site } from "@/data/site";
 import { WorkPreviewCard } from "@/components/portfolio/work-preview-card";
 import { Badge } from "@/components/ui/badge";
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return { title: "Work" };
   return {
     title: `${category.title} by IDOWU DEBORAH AYOKA (Debby Tella)`,
-    description: `${category.description} Designed by IDOWU DEBORAH AYOKA — Debby Tella, graphic designer in Nigeria.`,
+    description: `${category.description} Designed by IDOWU DEBORAH AYOKA — Debby Tella, professional graphic designer.`,
   };
 }
 
@@ -50,8 +50,9 @@ export default async function WorkCategoryPage({ params }: Props) {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Badge className="bg-primary text-primary-foreground hover:bg-primary">
-              Full collection
+              {category.pieceCount} designs
             </Badge>
+            <Badge variant="outline">From {formatUsd(category.fromPriceUsd)}</Badge>
             <Badge variant="outline">By IDOWU DEBORAH AYOKA</Badge>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">

@@ -69,7 +69,7 @@ const paymentIcons = [
 ];
 
 export function PayAndContact() {
-  const bank = site.payments.nigeriaBank;
+  const bank = site.payments.bankDetails;
   const whatsappText = encodeURIComponent(
     "Hi Debby, I want to pay / hire you for a project. Please confirm payment details."
   );
@@ -143,7 +143,7 @@ export function PayAndContact() {
               <div className="flex flex-wrap items-center gap-3">
                 <OpayIcon className="h-10 w-10" />
                 <PalmPayIcon className="h-10 w-10" />
-                <Badge className="bg-gold text-charcoal hover:bg-gold">Nigeria bank details</Badge>
+                <Badge className="bg-gold text-charcoal hover:bg-gold">Payment details</Badge>
               </div>
               <h3 className="mt-5 font-serif text-3xl">Pay via Opay / PalmPay / bank</h3>
               <p className="mt-2 text-sm text-muted-foreground">{bank.note}</p>
@@ -244,7 +244,7 @@ export function PayAndContact() {
                 <span>
                   <span className="block text-sm text-white/65">WhatsApp</span>
                   <span className="mt-1 block text-2xl font-semibold tracking-wide">
-                    {site.phone}
+                    Message Debby
                   </span>
                 </span>
               </a>

@@ -63,7 +63,7 @@ export function HireDebbyButton({
             </span>
             <span>
               <span className="block text-sm font-medium">Message on WhatsApp</span>
-              <span className="block text-xs text-muted-foreground">{site.phone}</span>
+              <span className="block text-xs text-muted-foreground">Chat with Debby</span>
             </span>
           </a>
         </DropdownMenuItem>
