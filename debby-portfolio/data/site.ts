@@ -24,10 +24,10 @@ export const site = {
   offDays: ["Saturday", "Sunday"],
   tagline: "Design that stops the scroll and sells the story.",
   shortBio:
-    "Hi, I'm IDOWU DEBORAH AYOKA — known as Debby Tella — a graphic designer with 3+ years of experience creating social media designs, Canva templates, PowerPoint and presentation designs, ebook covers, magazine, mural, stained glass and clean visual designs for brands and businesses.",
+    "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience and an active Fiverr presence (yemisi4). I create label design, packaging, social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey sublimation, product design and clean visuals for brands and businesses.",
   footerLine:
-    "IDOWU DEBORAH AYOKA (Debby Tella) — graphic designer specializing in social media, Canva, presentations, ebook covers, magazine, mural and stained glass design.",
-  specialization: "Social Media, Digital Marketing, Jersey Sublimation, Product Design, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
+    "Graphic designer specializing in label design, packaging, social media, Canva, presentations and visual design that helps ideas sell. Active on Fiverr as yemisi4.",
+  specialization: "Label Design, Packaging, Social Media, Digital Marketing, Jersey Sublimation, Product Design, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
   payments: {
     headline: "Pay the way that works for you",
     note: "PayPal is not accepted. For crypto and other methods, message Debby and she will share the details.",
@@ -90,12 +90,12 @@ export const site = {
   stats: {
     experience: "3+",
     experienceLabel: "Years of Experience",
-    projects: "123+",
+    projects: "380+",
     projectsLabel: "Design Pieces",
-    projectsNote: "Across social, Canva, presentations and ebook covers.",
-    clients: "Repeat",
-    clientsLabel: "Buyer Collaborations",
-    clientsNote: "Includes ongoing client collaborations.",
+    projectsNote: "Across labels, packaging, social, Canva, presentations and more.",
+    clients: "4.9★",
+    clientsLabel: "Fiverr Rating",
+    clientsNote: "Verified Fiverr buyers on yemisi4.",
   },
   socials: [
     { name: "Fiverr", href: "https://www.fiverr.com/yemisi4", label: "Fiverr Profile" },
@@ -143,16 +143,20 @@ export const site = {
 } as const;
 
 export const seo = {
-  title:
-    "IDOWU DEBORAH AYOKA (Debby Tella) — Graphic Designer | Social, Magazine, Mural",
+  title: "Debby Tella — Graphic Designer | Label, Social & More",
   description:
-    "Hire IDOWU DEBORAH AYOKA, known as Debby Tella — professional graphic designer with 3+ years experience. Social media design, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design. Pay via Opay, PalmPay, bank transfer or crypto. Replies within 4–5 hours on weekdays.",
+    "Hire Debby Tella — professional graphic designer with 3+ years experience and an active Fiverr profile (yemisi4, 4.9★). Label design, packaging, social media, Canva, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design. Legal name for payments/search: IDOWU DEBORAH AYOKA.",
   keywords: [
-    "IDOWU DEBORAH AYOKA",
-    "Idowu Deborah Ayoka",
     "Debby Tella",
     "Debby Tella graphic designer",
     "hire Debby Tella",
+    "IDOWU DEBORAH AYOKA",
+    "Idowu Deborah Ayoka",
+    "Fiverr yemisi4",
+    "Fiverr graphic designer Debby",
+    "label design",
+    "product label designer",
+    "packaging designer",
     "social media designer",
     "Canva template designer",
     "PowerPoint designer",
@@ -165,7 +169,6 @@ export const seo = {
     "jersey sublimation design",
     "product design",
     "Opay PalmPay designer",
-    "Fiverr yemisi4",
   ],
   ogImage: "/portrait/debby.jpg",
   locale: "en_US",

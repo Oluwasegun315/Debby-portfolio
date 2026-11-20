@@ -31,7 +31,7 @@ export function WorkSpaces() {
                 <div className="relative aspect-[16/11]">
                   <Image
                     src={category.cover}
-                    alt={`${category.title} workspace by IDOWU DEBORAH AYOKA`}
+                    alt={`${category.title} workspace by Debby Tella`}
                     fill
                     className="object-cover transition duration-700 group-hover:scale-[1.05]"
                     sizes="(max-width: 768px) 100vw, 33vw"

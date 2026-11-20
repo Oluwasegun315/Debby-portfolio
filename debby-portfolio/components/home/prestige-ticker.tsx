@@ -4,21 +4,21 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const laneA = [
-  "IDOWU DEBORAH AYOKA",
   "Debby Tella",
   "Graphic Designer",
+  "Label Design · Packaging",
   "Social · Canva · Magazine · Mural",
-  "Stained Glass · Presentations",
+  "Digital Marketing · Jersey · Product",
   "Hire Debby",
 ];
 
 const laneB = [
   "Design that sells",
-  "From scratch & inspiration",
+  "3+ years experience",
+  "Fiverr · yemisi4 · 4.9★",
   "Explore the studios",
   "Bank · Opay · PalmPay · Crypto",
   "Replies in 4–5 hours",
-  "Available worldwide",
 ];
 
 export function PrestigeTicker() {

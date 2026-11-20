@@ -48,6 +48,9 @@ const PrestigeTicker = nextDynamic(() =>
 const ExploreMagnet = nextDynamic(() =>
   import("@/components/home/explore-magnet").then((m) => m.ExploreMagnet)
 );
+const FiverrCredibility = nextDynamic(() =>
+  import("@/components/home/fiverr-credibility").then((m) => m.FiverrCredibility)
+);
 const TestimonialsCarousel = nextDynamic(() =>
   import("@/components/testimonials/testimonials-carousel").then(
     (m) => m.TestimonialsCarousel
@@ -87,6 +90,10 @@ export default async function HomePage() {
 
       <div className="content-lazy">
         <TrustStrip />
+      </div>
+
+      <div className="content-lazy">
+        <FiverrCredibility />
       </div>
 
       <div className="content-lazy">
@@ -166,8 +173,9 @@ export default async function HomePage() {
             <p className="mt-2 text-gold">{site.stats.experienceLabel}</p>
             <p className="mt-6 leading-relaxed text-white/70">
               I am a graphic designer with {site.experience.toLowerCase()} of practice —
-              focused on social content, templates, presentations and product visuals
-              that help brands look intentional and ready to sell.
+              including live Fiverr work as yemisi4. I know graphic design deeply: labels,
+              packaging, social content, templates, presentations and product visuals that
+              help brands look intentional and ready to sell.
             </p>
             <p className="mt-4 leading-relaxed text-white/70">
               The approach is simple: listen closely, design with intention, refine carefully, and
@@ -181,7 +189,7 @@ export default async function HomePage() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="grid grid-cols-2 gap-4">
-              {["Social Media", "Digital Marketing", "Jersey Sublimation", "Product Design", "Magazine", "Mural"].map((item) => (
+              {["Label Design", "Social Media", "Digital Marketing", "Jersey Sublimation", "Product Design", "Magazine"].map((item) => (
                 <div key={item} className="border border-white/10 p-5">
                   <p className="font-serif text-xl">{item}</p>
                 </div>

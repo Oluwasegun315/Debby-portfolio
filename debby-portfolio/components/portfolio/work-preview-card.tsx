@@ -28,7 +28,7 @@ export function WorkPreviewCard({
   fullWidth?: boolean;
 }) {
   const whatsappText = encodeURIComponent(
-    `Hi Debby (IDOWU DEBORAH AYOKA), I love this design "${work.title}" and I want to hire you.`
+    `Hi Debby, I love this design "${work.title}" and I want to hire you.`
   );
 
   return (
@@ -42,7 +42,7 @@ export function WorkPreviewCard({
           <div className={`relative aspect-[3/4] ${fullWidth ? "w-full" : "w-[220px] sm:w-[260px]"}`}>
             <Image
               src={work.src}
-              alt={`${work.title} by IDOWU DEBORAH AYOKA (Debby Tella)`}
+              alt={`${work.title} by Debby Tella`}
               fill
               loading="lazy"
               quality={72}

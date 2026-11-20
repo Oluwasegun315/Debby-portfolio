@@ -57,11 +57,11 @@ export function TrustStrip() {
             <div>
               <p className="flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-gold">
                 <Star className="h-4 w-4" />
-                Real reviews
+                Fiverr · yemisi4
               </p>
-              <p className="mt-3 font-serif text-3xl">Growing live</p>
+              <p className="mt-3 font-serif text-3xl">{site.stats.clients}</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                New Fiverr buyer reviews are added as Debby delivers orders.
+                {site.stats.clientsNote} New reviews grow as Debby delivers.
               </p>
             </div>
           </div>

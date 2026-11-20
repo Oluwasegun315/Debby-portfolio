@@ -23,7 +23,7 @@ export function ExploreMagnet() {
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Premium buyers explore before they hire. Open a workspace, preview the
-            craft, feel the difference, then message IDOWU DEBORAH AYOKA (Debby Tella).
+            craft, feel the difference, then message Debby Tella.
           </p>
         </Reveal>
 

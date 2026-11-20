@@ -267,6 +267,146 @@ const productDesignPieces = buildPieces({
   basePrice: 55,
 });
 
+/** Fiverr-proven label, packaging & flyer work from /portfolio/works */
+const labelDesignNamed: Record<string, { title: string; category: string }> = {
+  "ketchup-bottle-label.webp": {
+    title: "Redgold Organic Ketchup Label",
+    category: "Label Design",
+  },
+  "images-10.jpg": {
+    title: "Lemonade Juice Packaging Label",
+    category: "Label Design",
+  },
+  "birthday-party-event-flyer-template.jpg": {
+    title: "Birthday Party Event Flyer",
+    category: "Flyer Design",
+  },
+  "images-1.jpg": {
+    title: "Graphics Design Service Flyer",
+    category: "Marketing Design",
+  },
+  "images-5.jpg": {
+    title: "Creative Business Flyer",
+    category: "Flyer Design",
+  },
+  "club-dj-party-flyer-social-media-post_505751-6153.avif": {
+    title: "Club DJ Party Flyer",
+    category: "Social Media Design",
+  },
+  "spectacular-creative-business-flyer-template-1659506710953-cover.webp": {
+    title: "Spectacular Business Flyer Cover",
+    category: "Flyer Design",
+  },
+  "images-30.jpg": {
+    title: "Jungle Animal Wall Mural",
+    category: "Illustration",
+  },
+  "images-20.jpg": {
+    title: "Cultural Character Illustration",
+    category: "Illustration",
+  },
+  "abstract-business-flyer-with-photo_23-2148341823.avif": {
+    title: "Abstract Business Flyer",
+    category: "Marketing Design",
+  },
+};
+
+const labelDesignFiles = [
+  "ketchup-bottle-label.webp",
+  "images-10.jpg",
+  "images.jpg",
+  "images-2.jpg",
+  "images-3.jpg",
+  "images-4.jpg",
+  "images-6.jpg",
+  "images-7.jpg",
+  "images-8.jpg",
+  "images-9.jpg",
+  "images-11.jpg",
+  "images-12.jpg",
+  "images-13.jpg",
+  "images-14.jpg",
+  "images-15.jpg",
+  "images-16.jpg",
+  "images-17.jpg",
+  "images-18.jpg",
+  "images-19.jpg",
+  "images-21.jpg",
+  "images-22.jpg",
+  "images-23.jpg",
+  "images-25.jpg",
+  "images-26.jpg",
+  "images-27.jpg",
+  "images-28.jpg",
+  "images-29.jpg",
+  "images-31.jpg",
+  "images-32.jpg",
+  "images-33.jpg",
+  "images-34.jpg",
+  "images-35.jpg",
+  "images-36.jpg",
+  "images-37.jpg",
+  "images-38.jpg",
+  "images-39.jpg",
+  "images-40.jpg",
+  "images-41.jpg",
+  "images-42.jpg",
+  "images-43.jpg",
+  "images-44.jpg",
+  "images-45.jpg",
+  "images-46.jpg",
+  "images-47.jpg",
+  "images-48.jpg",
+  "images-49.jpg",
+  "images-50.jpg",
+  "images-51.jpg",
+  "images-52.jpg",
+  "images-53.jpg",
+  "images-54.jpg",
+  "images-55.jpg",
+  "images-56.jpg",
+  "images-57.jpg",
+  "images-58.jpg",
+  "images-59.jpg",
+  "images-60.jpg",
+  "images-61.jpg",
+  "images-62.jpg",
+  "images-63.jpg",
+  "images-64.jpg",
+  "images-65.jpg",
+  "birthday-party-event-flyer-template.jpg",
+  "images-1.jpg",
+  "images-5.jpg",
+  "club-dj-party-flyer-social-media-post_505751-6153.avif",
+  "spectacular-creative-business-flyer-template-1659506710953-cover.webp",
+  "images-30.jpg",
+  "images-20.jpg",
+  "abstract-business-flyer-with-photo_23-2148341823.avif",
+];
+
+const labelDesignPieces: WorkPiece[] = labelDesignFiles.map((file, index) => {
+  const num = index + 1;
+  const named = labelDesignNamed[file];
+  const category = named?.category ?? "Label Design";
+  return {
+    id: `lbl-${num}`,
+    title: named?.title ?? `Label & Packaging Design ${num}`,
+    category,
+    shortDescription:
+      "Fiverr-ready label, packaging or marketing design from Debby’s delivered work style.",
+    fullDescription:
+      "A design from Debby’s Label & Packaging collection — the same craft buyers see on her Fiverr profile (yemisi4). Built for product sellers who need shelf-ready labels, bottle packaging, flyers and commercial visuals that look professional, not random.",
+    deliverables: [
+      "Custom label / packaging / marketing artwork",
+      "Print-ready composition",
+      "Brand-aligned typography and color",
+      "Mockup-ready presentation",
+    ],
+    priceUsd: 45 + ((num * 7) % 56),
+    src: `/portfolio/works/${file}`,
+  };
+});
+
 function toCategory(
   slug: string,
   title: string,
@@ -287,6 +427,12 @@ function toCategory(
 }
 
 export const workCategories: WorkCategory[] = [
+  toCategory(
+    "label-design",
+    "Label Design",
+    "Debby’s Fiverr specialty — product labels, bottle packaging and commercial visuals buyers can verify on her live Fiverr profile (yemisi4). Open this workspace to preview the full label & packaging set.",
+    labelDesignPieces
+  ),
   toCategory(
     "social-media-design",
     "Social Media Design",

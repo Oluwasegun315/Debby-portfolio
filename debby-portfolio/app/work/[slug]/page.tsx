@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getWorkCategory(slug);
   if (!category) return { title: "Work" };
   return {
-    title: `${category.title} by IDOWU DEBORAH AYOKA (Debby Tella)`,
-    description: `${category.description} Designed by IDOWU DEBORAH AYOKA — Debby Tella, professional graphic designer.`,
+    title: `${category.title} — Debby Tella`,
+    description: `${category.description} Designed by Debby Tella, professional graphic designer.`,
   };
 }
 
@@ -53,7 +53,7 @@ export default async function WorkCategoryPage({ params }: Props) {
               {category.pieceCount} designs
             </Badge>
             <Badge variant="outline">From {formatUsd(category.fromPriceUsd)}</Badge>
-            <Badge variant="outline">By IDOWU DEBORAH AYOKA</Badge>
+            <Badge variant="outline">By Debby Tella</Badge>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button
@@ -62,7 +62,7 @@ export default async function WorkCategoryPage({ params }: Props) {
             >
               <a
                 href={`${site.whatsapp}?text=${encodeURIComponent(
-                  `Hi Debby (IDOWU DEBORAH AYOKA), I love your ${category.title} work and want to hire you.`
+                  `Hi Debby, I love your ${category.title} work and want to hire you.`
                 )}`}
                 target="_blank"
                 rel="noreferrer"

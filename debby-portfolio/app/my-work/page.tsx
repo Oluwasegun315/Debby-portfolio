@@ -10,7 +10,7 @@ import { FiverrIcon } from "@/components/icons/brand-icons";
 export const metadata: Metadata = {
   title: "My Work",
   description:
-    "Browse all Debby Tella work spaces — social media, digital marketing, jersey sublimation, product design, Canva, presentations, ebook covers, magazine, mural and stained glass design.",
+    "Browse all Debby Tella work spaces — label design (Fiverr specialty), social media, digital marketing, jersey sublimation, product design, Canva, presentations, ebook covers, magazine, mural and stained glass design.",
 };
 
 export default function MyWorkPage() {

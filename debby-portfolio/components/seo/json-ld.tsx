@@ -9,15 +9,15 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${siteUrl}/#person`,
-    name: site.legalName,
+    name: site.name,
     givenName: "Deborah Ayoka",
     familyName: "Idowu",
     alternateName: [
-      "IDOWU DEBORAH AYOKA",
+      site.legalName,
       "Idowu Deborah Ayoka",
-      "Debby Tella",
       "Debby",
       "Debby Tella Graphic Designer",
+      "yemisi4",
     ],
     jobTitle: "Graphic Designer",
     description: seo.description,
@@ -27,6 +27,8 @@ export function JsonLd() {
     sameAs: [site.fiverr, site.whatsapp],
     knowsAbout: [
       "Graphic design",
+      "Label design",
+      "Packaging design",
       "Social media design",
       "Canva template design",
       "PowerPoint design",
@@ -46,8 +48,8 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${siteUrl}/#business`,
-    name: `${site.legalName} — Debby Tella Graphic Design`,
-    alternateName: "Debby Tella Portfolio",
+    name: "Debby Tella Graphic Design",
+    alternateName: [site.legalName, "Debby Tella Portfolio", "yemisi4"],
     description: seo.description,
     url: siteUrl,
     image: `${siteUrl}/portrait/debby.jpg`,
@@ -69,7 +71,7 @@ export function JsonLd() {
     currenciesAccepted: "NGN, USD, USDT, BTC, ETH",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Graphic design packages by IDOWU DEBORAH AYOKA",
+      name: "Graphic design packages by Debby Tella",
       itemListElement: site.packages.map((pack) => ({
         "@type": "Offer",
         name: pack.name,
@@ -86,8 +88,8 @@ export function JsonLd() {
     "@type": "WebSite",
     "@id": `${siteUrl}/#website`,
     url: siteUrl,
-    name: "IDOWU DEBORAH AYOKA — Debby Tella Portfolio",
-    alternateName: ["Debby Tella", "Debby Tella Graphic Designer"],
+    name: "Debby Tella — Graphic Designer",
+    alternateName: [site.name, site.legalName, "Debby Tella Graphic Designer"],
     description: seo.description,
     publisher: { "@id": `${siteUrl}/#person` },
     inLanguage: "en",
@@ -104,10 +106,18 @@ export function JsonLd() {
     mainEntity: [
       {
         "@type": "Question",
+        name: "Who is Debby Tella?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Debby Tella is a professional graphic designer (legal name IDOWU DEBORAH AYOKA) with 3+ years experience and an active Fiverr profile as yemisi4. She creates label design, packaging, social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design.",
+        },
+      },
+      {
+        "@type": "Question",
         name: "Who is IDOWU DEBORAH AYOKA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "IDOWU DEBORAH AYOKA is a professional graphic designer also known as Debby Tella. She creates social media designs, Canva templates, presentations, ebook covers, magazine design, mural design and stained glass design.",
+          text: "IDOWU DEBORAH AYOKA is the legal name of Debby Tella, a professional graphic designer also known on Fiverr as yemisi4.",
         },
       },
       ...faqs.map((item) => ({
@@ -124,7 +134,7 @@ export function JsonLd() {
   const services = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Design workspaces by IDOWU DEBORAH AYOKA (Debby Tella)",
+    name: "Design workspaces by Debby Tella",
     itemListElement: workCategories.map((category, index) => ({
       "@type": "ListItem",
       position: index + 1,
