@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react";
 const laneA = [
   "Debby Tella",
   "Graphic Designer",
-  "Label Design · Packaging",
   "Social · Canva · Magazine · Mural",
+  "Stained Glass · Presentations",
   "Digital Marketing · Jersey · Product",
   "Hire Debby",
 ];

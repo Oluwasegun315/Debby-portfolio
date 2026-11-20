@@ -78,7 +78,7 @@ export function Hero() {
           </h1>
           <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
             Hire Debby Tella — a graphic designer with {site.experience.toLowerCase()}{" "}
-            and a live Fiverr presence (yemisi4). Label design, social media, Canva,
+            and a live Fiverr presence (yemisi4). Social media, Canva templates,
             presentations, ebook covers, magazine, mural, stained glass, digital
             marketing, jersey and product designs for brands that want to look ready
             to sell.

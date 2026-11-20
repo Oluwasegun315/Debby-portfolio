@@ -27,8 +27,6 @@ export function JsonLd() {
     sameAs: [site.fiverr, site.whatsapp],
     knowsAbout: [
       "Graphic design",
-      "Label design",
-      "Packaging design",
       "Social media design",
       "Canva template design",
       "PowerPoint design",
@@ -109,7 +107,7 @@ export function JsonLd() {
         name: "Who is Debby Tella?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Debby Tella is a professional graphic designer (legal name IDOWU DEBORAH AYOKA) with 3+ years experience and an active Fiverr profile as yemisi4. She creates label design, packaging, social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design.",
+          text: "Debby Tella is a professional graphic designer (legal name IDOWU DEBORAH AYOKA) with 3+ years experience and an active Fiverr profile as yemisi4. She creates social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design.",
         },
       },
       {

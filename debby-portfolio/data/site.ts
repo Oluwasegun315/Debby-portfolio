@@ -24,10 +24,10 @@ export const site = {
   offDays: ["Saturday", "Sunday"],
   tagline: "Design that stops the scroll and sells the story.",
   shortBio:
-    "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience and an active Fiverr presence (yemisi4). I create label design, packaging, social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey sublimation, product design and clean visuals for brands and businesses.",
+    "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience and an active Fiverr presence (yemisi4). I create social media designs, Canva templates, PowerPoint and presentation designs, ebook covers, magazine, mural, stained glass, digital marketing, jersey sublimation, product design and clean visuals for brands and businesses.",
   footerLine:
-    "Graphic designer specializing in label design, packaging, social media, Canva, presentations and visual design that helps ideas sell. Active on Fiverr as yemisi4.",
-  specialization: "Label Design, Packaging, Social Media, Digital Marketing, Jersey Sublimation, Product Design, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
+    "Graphic designer specializing in social media, Canva, presentations, ebook covers, magazine, mural, stained glass and visual design that helps ideas sell. Active on Fiverr as yemisi4.",
+  specialization: "Social Media, Digital Marketing, Jersey Sublimation, Product Design, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
   payments: {
     headline: "Pay the way that works for you",
     note: "PayPal is not accepted. For crypto and other methods, message Debby and she will share the details.",
@@ -90,9 +90,9 @@ export const site = {
   stats: {
     experience: "3+",
     experienceLabel: "Years of Experience",
-    projects: "380+",
+    projects: "310+",
     projectsLabel: "Design Pieces",
-    projectsNote: "Across labels, packaging, social, Canva, presentations and more.",
+    projectsNote: "Across social, Canva, presentations, magazine, mural and more.",
     clients: "4.9★",
     clientsLabel: "Fiverr Rating",
     clientsNote: "Verified Fiverr buyers on yemisi4.",
@@ -143,9 +143,9 @@ export const site = {
 } as const;
 
 export const seo = {
-  title: "Debby Tella — Graphic Designer | Label, Social & More",
+  title: "Debby Tella — Graphic Designer | Social, Magazine, Mural & More",
   description:
-    "Hire Debby Tella — professional graphic designer with 3+ years experience and an active Fiverr profile (yemisi4, 4.9★). Label design, packaging, social media, Canva, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design. Legal name for payments/search: IDOWU DEBORAH AYOKA.",
+    "Hire Debby Tella — professional graphic designer with 3+ years experience and an active Fiverr profile (yemisi4, 4.9★). Social media, Canva, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design. Legal name for payments/search: IDOWU DEBORAH AYOKA.",
   keywords: [
     "Debby Tella",
     "Debby Tella graphic designer",
@@ -154,9 +154,6 @@ export const seo = {
     "Idowu Deborah Ayoka",
     "Fiverr yemisi4",
     "Fiverr graphic designer Debby",
-    "label design",
-    "product label designer",
-    "packaging designer",
     "social media designer",
     "Canva template designer",
     "PowerPoint designer",

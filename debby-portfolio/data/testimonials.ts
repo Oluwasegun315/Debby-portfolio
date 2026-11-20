@@ -16,6 +16,20 @@ export type Testimonial = {
 /** Seed reviews already on the site. New Fiverr reviews are appended in reviews-live.json */
 export const seedTestimonials: Testimonial[] = [
   {
+    id: "0",
+    name: "promansale",
+    role: "Fiverr Buyer",
+    company: "Product Label Design",
+    location: "United Kingdom",
+    projectType: "Label Design",
+    quote:
+      "Thank you Debby, for the quick turn around, and attention to details sample provided. Will definitely use you again for my other product label design.",
+    rating: 5,
+    initials: "P",
+    featured: true,
+    source: "Fiverr",
+  },
+  {
     id: "1",
     name: "swindlesea",
     role: "Fiverr Buyer",

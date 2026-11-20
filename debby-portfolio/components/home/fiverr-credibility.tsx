@@ -23,9 +23,9 @@ export function FiverrCredibility() {
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Debby Tella is an experienced graphic designer with {site.experience.toLowerCase()}{" "}
-            of craft. Her live Fiverr profile (<strong className="text-foreground">yemisi4</strong>) —
-            4.9★ label design — proves she is not a random portfolio. The workspaces below show
-            everything she can do: labels, packaging, social, marketing, jerseys, products and more.
+            of craft. Her live Fiverr profile (<strong className="text-foreground">yemisi4</strong>)
+            proves she is not a random portfolio — real orders, real buyers, real delivery. The
+            workspaces on this site show the designs she can do.
           </p>
         </Reveal>
 
@@ -34,22 +34,22 @@ export function FiverrCredibility() {
             {
               icon: Briefcase,
               title: `${site.experience}`,
-              text: "Deep graphic design experience — labels, branding visuals and client-ready craft.",
+              text: "Hands-on graphic design experience delivering client-ready visuals.",
             },
             {
               icon: Award,
               title: `${total}+ designs`,
-              text: `Across ${workCategories.length} work spaces — including her Fiverr label & packaging set.`,
+              text: `Across ${workCategories.length} work spaces — proof of range, not one style only.`,
             },
             {
               icon: BadgeCheck,
               title: "Fiverr · yemisi4",
-              text: "Real Fiverr personality — live gigs, delivered label orders, and buyer reviews.",
+              text: "A live Fiverr personality buyers can check — real orders, real delivery.",
             },
             {
               icon: Star,
               title: "4.9★ rating",
-              text: "Verified Fiverr buyers praise turnaround, detail and upgrades they come back for.",
+              text: "Verified Fiverr buyers praise turnaround, detail and work they come back for.",
             },
           ].map((item) => (
             <Reveal key={item.title}>
@@ -82,9 +82,6 @@ export function FiverrCredibility() {
                   <FiverrIcon className="h-4 w-4" />
                   Open Fiverr · yemisi4
                 </a>
-              </Button>
-              <Button asChild variant="outline">
-                <a href="/work/label-design">See Label Design workspace</a>
               </Button>
               <Button asChild variant="outline">
                 <a href="/my-work">Browse full work spaces</a>
