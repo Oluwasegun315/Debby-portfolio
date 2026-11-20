@@ -35,68 +35,68 @@
 }
 
 :root {
-  /* Voice of God Accessories inspired — charcoal / gold / ivory */
-  --background: 40 29% 95%; /* #f7f5f0 ivory */
-  --foreground: 240 5% 11%; /* #1c1c1e charcoal */
+  /* Premium atelier — ink charcoal, champagne gold, soft gallery ivory */
+  --background: 36 28% 96%;
+  --foreground: 30 10% 10%;
   --card: 0 0% 100%;
-  --card-foreground: 240 5% 11%;
+  --card-foreground: 30 10% 10%;
   --popover: 0 0% 100%;
-  --popover-foreground: 240 5% 11%;
-  --primary: 240 5% 11%;
-  --primary-foreground: 40 29% 95%;
-  --secondary: 45 20% 94%; /* #f3f1ec */
-  --secondary-foreground: 240 5% 11%;
-  --muted: 40 16% 89%; /* #e8e4de */
-  --muted-foreground: 30 6% 40%; /* #6b6560 */
-  --accent: 42 47% 56%; /* #c4a35a gold */
-  --accent-foreground: 240 5% 11%;
+  --popover-foreground: 30 10% 10%;
+  --primary: 30 12% 12%;
+  --primary-foreground: 36 28% 96%;
+  --secondary: 34 22% 93%;
+  --secondary-foreground: 30 10% 10%;
+  --muted: 34 16% 90%;
+  --muted-foreground: 28 8% 38%;
+  --accent: 40 42% 48%;
+  --accent-foreground: 30 12% 10%;
   --destructive: 0 72% 51%;
   --destructive-foreground: 0 0% 98%;
-  --border: 40 14% 84%;
-  --input: 40 14% 84%;
-  --ring: 42 47% 56%;
-  --radius: 0.4rem;
-  --gold: 42 47% 56%;
-  --charcoal: 240 5% 11%;
-  --brand: 240 5% 11%;
-  --brand-foreground: 40 29% 95%;
-  --surface: 45 20% 94%;
-  --hero-from: 240 5% 11%;
-  --hero-mid: 240 4% 17%;
-  --hero-to: 240 6% 8%;
-  --hero-glow: 42 47% 56%;
+  --border: 34 14% 84%;
+  --input: 34 14% 84%;
+  --ring: 40 42% 48%;
+  --radius: 0.35rem;
+  --gold: 40 42% 48%;
+  --charcoal: 30 12% 12%;
+  --brand: 30 12% 12%;
+  --brand-foreground: 36 28% 96%;
+  --surface: 34 22% 93%;
+  --hero-from: 30 14% 9%;
+  --hero-mid: 28 10% 16%;
+  --hero-to: 30 16% 7%;
+  --hero-glow: 40 48% 52%;
 }
 
 .dark {
-  /* Alternate theme — deep charcoal with brighter gold (still VOG family) */
-  --background: 240 6% 7%; /* #121214 */
-  --foreground: 40 29% 95%;
-  --card: 240 4% 12%;
-  --card-foreground: 40 29% 95%;
-  --popover: 240 4% 12%;
-  --popover-foreground: 40 29% 95%;
-  --primary: 42 52% 62%; /* gold-light #d4b86a */
-  --primary-foreground: 240 6% 7%;
-  --secondary: 240 4% 17%; /* #2c2c2e */
-  --secondary-foreground: 40 29% 95%;
-  --muted: 240 4% 17%;
-  --muted-foreground: 40 10% 70%;
-  --accent: 42 52% 62%;
-  --accent-foreground: 240 6% 7%;
+  /* Midnight atelier — deep ink with champagne gold */
+  --background: 240 8% 5%;
+  --foreground: 36 24% 94%;
+  --card: 240 6% 9%;
+  --card-foreground: 36 24% 94%;
+  --popover: 240 6% 9%;
+  --popover-foreground: 36 24% 94%;
+  --primary: 40 48% 58%;
+  --primary-foreground: 240 8% 5%;
+  --secondary: 240 5% 13%;
+  --secondary-foreground: 36 24% 94%;
+  --muted: 240 5% 13%;
+  --muted-foreground: 36 12% 68%;
+  --accent: 40 48% 58%;
+  --accent-foreground: 240 8% 5%;
   --destructive: 0 62% 40%;
   --destructive-foreground: 0 0% 98%;
-  --border: 240 4% 20%;
-  --input: 240 4% 20%;
-  --ring: 42 52% 62%;
-  --gold: 42 52% 62%;
-  --charcoal: 240 6% 7%;
-  --brand: 42 52% 62%;
-  --brand-foreground: 240 6% 7%;
-  --surface: 240 4% 14%;
-  --hero-from: 240 6% 7%;
-  --hero-mid: 240 4% 14%;
-  --hero-to: 240 5% 11%;
-  --hero-glow: 42 52% 62%;
+  --border: 240 5% 16%;
+  --input: 240 5% 16%;
+  --ring: 40 48% 58%;
+  --gold: 40 48% 58%;
+  --charcoal: 240 8% 5%;
+  --brand: 40 48% 58%;
+  --brand-foreground: 240 8% 5%;
+  --surface: 240 6% 11%;
+  --hero-from: 240 10% 4%;
+  --hero-mid: 30 8% 12%;
+  --hero-to: 240 8% 6%;
+  --hero-glow: 40 52% 55%;
 }
 
 @layer base {
@@ -239,12 +239,14 @@
 }
 
 .brand-panel {
-  background: linear-gradient(
-    135deg,
-    hsl(var(--hero-from)) 0%,
-    hsl(var(--hero-mid)) 55%,
-    hsl(var(--charcoal)) 100%
-  );
+  background:
+    radial-gradient(ellipse at 85% 15%, hsl(var(--hero-glow) / 0.18), transparent 40%),
+    linear-gradient(
+      145deg,
+      hsl(var(--hero-from)) 0%,
+      hsl(var(--hero-mid)) 48%,
+      hsl(var(--charcoal)) 100%
+    );
 }
 
 @keyframes marquee-left {

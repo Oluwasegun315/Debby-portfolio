@@ -173,9 +173,9 @@ export default async function HomePage() {
             <p className="mt-2 text-gold">{site.stats.experienceLabel}</p>
             <p className="mt-6 leading-relaxed text-white/70">
               I am a graphic designer with {site.experience.toLowerCase()} of practice —
-              including live Fiverr work as yemisi4. I know graphic design deeply: labels,
-              packaging, social content, templates, presentations and product visuals that
-              help brands look intentional and ready to sell.
+              including live Fiverr work buyers can verify. I know graphic design deeply:
+              social content, templates, presentations and product visuals that help brands
+              look intentional and ready to sell.
             </p>
             <p className="mt-4 leading-relaxed text-white/70">
               The approach is simple: listen closely, design with intention, refine carefully, and

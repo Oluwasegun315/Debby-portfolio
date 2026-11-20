@@ -15,7 +15,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <ScrollProgress />
         <Navbar />
         <QuickJumpNav />
-        <main id="main-content" className="flex-1 pb-24">
+        <main id="main-content" className="flex-1 pb-16">
           {children}
         </main>
         <Footer />

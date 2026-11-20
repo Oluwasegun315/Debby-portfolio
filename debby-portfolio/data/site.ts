@@ -24,9 +24,9 @@ export const site = {
   offDays: ["Saturday", "Sunday"],
   tagline: "Design that stops the scroll and sells the story.",
   shortBio:
-    "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience and an active Fiverr presence (yemisi4). I create social media designs, Canva templates, PowerPoint and presentation designs, ebook covers, magazine, mural, stained glass, digital marketing, jersey sublimation, product design and clean visuals for brands and businesses.",
+    "Hi, I'm Debby Tella — a graphic designer with 3+ years of experience and an active Fiverr presence. I create social media designs, Canva templates, PowerPoint and presentation designs, ebook covers, magazine, mural, stained glass, digital marketing, jersey sublimation, product design and clean visuals for brands and businesses.",
   footerLine:
-    "Graphic designer specializing in social media, Canva, presentations, ebook covers, magazine, mural, stained glass and visual design that helps ideas sell. Active on Fiverr as yemisi4.",
+    "Graphic designer specializing in social media, Canva, presentations, ebook covers, magazine, mural, stained glass and visual design that helps ideas sell.",
   specialization: "Social Media, Digital Marketing, Jersey Sublimation, Product Design, Canva, Presentations, Ebook Covers, Magazine, Mural, Stained Glass & Graphic Design",
   payments: {
     headline: "Pay the way that works for you",
@@ -95,7 +95,7 @@ export const site = {
     projectsNote: "Across social, Canva, presentations, magazine, mural and more.",
     clients: "4.9★",
     clientsLabel: "Fiverr Rating",
-    clientsNote: "Verified Fiverr buyers on yemisi4.",
+    clientsNote: "Verified Fiverr buyer reviews.",
   },
   socials: [
     { name: "Fiverr", href: "https://www.fiverr.com/yemisi4", label: "Fiverr Profile" },
@@ -145,14 +145,13 @@ export const site = {
 export const seo = {
   title: "Debby Tella — Graphic Designer | Social, Magazine, Mural & More",
   description:
-    "Hire Debby Tella — professional graphic designer with 3+ years experience and an active Fiverr profile (yemisi4, 4.9★). Social media, Canva, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design. Legal name for payments/search: IDOWU DEBORAH AYOKA.",
+    "Hire Debby Tella — professional graphic designer with 3+ years experience and an active Fiverr presence (4.9★). Social media, Canva, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design. Legal name for payments/search: IDOWU DEBORAH AYOKA.",
   keywords: [
     "Debby Tella",
     "Debby Tella graphic designer",
     "hire Debby Tella",
     "IDOWU DEBORAH AYOKA",
     "Idowu Deborah Ayoka",
-    "Fiverr yemisi4",
     "Fiverr graphic designer Debby",
     "social media designer",
     "Canva template designer",

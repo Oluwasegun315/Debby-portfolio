@@ -85,7 +85,7 @@ export function WorkShowcase() {
               <Button asChild size="lg" variant="gold">
                 <a href={site.fiverr} target="_blank" rel="noreferrer">
                   <FiverrIcon className="h-4 w-4" />
-                  Fiverr · yemisi4
+                  Open Fiverr profile
                 </a>
               </Button>
               <HireDebbyButton />

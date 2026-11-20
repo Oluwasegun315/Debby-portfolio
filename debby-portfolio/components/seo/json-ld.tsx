@@ -17,7 +17,6 @@ export function JsonLd() {
       "Idowu Deborah Ayoka",
       "Debby",
       "Debby Tella Graphic Designer",
-      "yemisi4",
     ],
     jobTitle: "Graphic Designer",
     description: seo.description,
@@ -47,7 +46,7 @@ export function JsonLd() {
     "@type": "ProfessionalService",
     "@id": `${siteUrl}/#business`,
     name: "Debby Tella Graphic Design",
-    alternateName: [site.legalName, "Debby Tella Portfolio", "yemisi4"],
+    alternateName: [site.legalName, "Debby Tella Portfolio"],
     description: seo.description,
     url: siteUrl,
     image: `${siteUrl}/portrait/debby.jpg`,
@@ -107,7 +106,7 @@ export function JsonLd() {
         name: "Who is Debby Tella?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Debby Tella is a professional graphic designer (legal name IDOWU DEBORAH AYOKA) with 3+ years experience and an active Fiverr profile as yemisi4. She creates social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design.",
+          text: "Debby Tella is a professional graphic designer (legal name IDOWU DEBORAH AYOKA) with 3+ years experience and an active Fiverr profile. She creates social media designs, Canva templates, presentations, ebook covers, magazine, mural, stained glass, digital marketing, jersey and product design.",
         },
       },
       {
@@ -115,7 +114,7 @@ export function JsonLd() {
         name: "Who is IDOWU DEBORAH AYOKA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "IDOWU DEBORAH AYOKA is the legal name of Debby Tella, a professional graphic designer also known on Fiverr as yemisi4.",
+          text: "IDOWU DEBORAH AYOKA is the legal name of Debby Tella, a professional graphic designer with an active Fiverr presence.",
         },
       },
       ...faqs.map((item) => ({

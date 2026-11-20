@@ -15,7 +15,7 @@ const laneA = [
 const laneB = [
   "Design that sells",
   "3+ years experience",
-  "Fiverr · yemisi4 · 4.9★",
+  "Trusted on Fiverr · 4.9★",
   "Explore the studios",
   "Bank · Opay · PalmPay · Crypto",
   "Replies in 4–5 hours",

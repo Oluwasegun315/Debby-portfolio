@@ -23,9 +23,9 @@ export function FiverrCredibility() {
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Debby Tella is an experienced graphic designer with {site.experience.toLowerCase()}{" "}
-            of craft. Her live Fiverr profile (<strong className="text-foreground">yemisi4</strong>)
-            proves she is not a random portfolio — real orders, real buyers, real delivery. The
-            workspaces on this site show the designs she can do.
+            of craft. Her live Fiverr profile proves she is not a random portfolio — real
+            orders, real buyers, real delivery. The workspaces on this site show the designs
+            she can do.
           </p>
         </Reveal>
 
@@ -43,8 +43,8 @@ export function FiverrCredibility() {
             },
             {
               icon: BadgeCheck,
-              title: "Fiverr · yemisi4",
-              text: "A live Fiverr personality buyers can check — real orders, real delivery.",
+              title: "Live on Fiverr",
+              text: "A real Fiverr presence buyers can check — orders, delivery and reviews.",
             },
             {
               icon: Star,
@@ -80,7 +80,7 @@ export function FiverrCredibility() {
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <a href={site.fiverr} target="_blank" rel="noreferrer">
                   <FiverrIcon className="h-4 w-4" />
-                  Open Fiverr · yemisi4
+                  Open Fiverr profile
                 </a>
               </Button>
               <Button asChild variant="outline">
